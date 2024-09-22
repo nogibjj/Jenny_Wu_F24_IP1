@@ -5,7 +5,7 @@ Test goes here
 
 import pandas as pd
 import pytest
-from main import load_and_preprocess, get_summary_stats
+from lib import load_and_preprocess, get_summary_stats
 
 
 example_csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
@@ -30,3 +30,5 @@ def test_get_summary_stats():
 
 test_get_summary_stats()
 test_load_and_preprocess()
+
+

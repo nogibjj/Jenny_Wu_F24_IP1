@@ -3,12 +3,12 @@ install:
 		pip install -r requirements.txt
 
 format:
-	black *.py
+	black *.py 
 
 lint:
 	ruff check *.py
 
 test:
-	pytest test_main.py
+	python -m pytest -vv --nbval ./python_files/*.ipynb
 
-all: install lint test
+all: install format lint test 
