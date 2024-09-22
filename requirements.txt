@@ -5,6 +5,7 @@ pytest-cov
 pylint
 nbval
 nbqa
+tabulate
 
 #rust based linter
 ruff
