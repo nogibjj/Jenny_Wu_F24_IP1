@@ -32,6 +32,7 @@ def get_summary_stats(general_df, col):
 
 """Building Visualization"""
 
+
 def hist_cong_age(general_df, col):
     """builds a histogram for the ages of all Congressmembers"""
 
@@ -41,7 +42,6 @@ def hist_cong_age(general_df, col):
     plt.ylabel("Frequency", fontsize=14)
     plt.savefig("output/congressional_age.png")
     # plt.show()
-
 
 
 def age_dist_50(general_df, desc_stats):
@@ -77,5 +77,3 @@ def age_dist_50(general_df, desc_stats):
         file.write("![congressional_age](/output/congressional_age.png)\n")
         file.write("\n\n")
         file.write("![chamber_age](output/chamber_age.png)\n")
-
-
