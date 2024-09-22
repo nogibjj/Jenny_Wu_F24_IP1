@@ -8,11 +8,11 @@ def main():
     csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
 
     general_df = lib.load_and_preprocess(csv)
-    s_stats = lib.get_summary_stats(general_df, "age_years")
+    desc_stats = lib.get_summary_stats(general_df, "age_years")
     lib.hist_cong_age(general_df, "age_years")
-    lib.age_dist_50(general_df, s_stats)
+    lib.age_dist_50(general_df, desc_stats)
     # print(general_df.head())
-    print(s_stats)
+    print(desc_stats)
 
 
 if __name__ == "__main__":

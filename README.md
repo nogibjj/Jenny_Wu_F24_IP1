@@ -1,5 +1,10 @@
+[![Install](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/install.yml)
+
 [![Format](https://github.com/nogibjj/Jenny_Wu_MP2_F24/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_MP2_F24/actions/workflows/hello.yml)
 
+[![Lint](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/lint.yml)
+
+[![Test](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/test.yml)
 #INSERT BADGES FOR OTHER CI/CD
 
 # Jenny_Wu_MP2_F24

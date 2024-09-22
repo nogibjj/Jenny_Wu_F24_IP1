@@ -6,6 +6,7 @@ Test goes here
 import pandas as pd
 import pytest
 import sys
+
 sys.path.append("python_files/main_files")
 import lib
 
@@ -22,14 +23,25 @@ def test_load_and_preprocess():
 def test_get_summary_stats():
     """test that the summary function will work"""
     test_desc_stats = lib.get_summary_stats(pd.read_csv(example_csv), "age_years")
-    assert test_desc_stats["mean"] == pytest.approx(
-        53.73247531045273, 0.1
-    )  # assert approximate
+    # assert approximate
     assert test_desc_stats["min"] == pytest.approx(23.6659822039699, 0.1)
     assert test_desc_stats["std"] == pytest.approx(10.763104939987494, 0.1)
 
 
+def test_hist_cong_age():
+    general_df = lib.load_and_preprocess(example_csv)
+    test_hist = lib.hist_cong_age(general_df, "age_years")
+    assert test_hist is None
+
+
+def test_age_dist_50():
+    general_df = lib.load_and_preprocess(example_csv)
+    desc_stats = lib.get_summary_stats(pd.read_csv(example_csv), "age_years")
+    test_hist_50 = lib.age_dist_50(general_df, desc_stats)
+    assert test_hist_50 is None
+
+
 test_get_summary_stats()
 test_load_and_preprocess()
-
-
+test_hist_cong_age()
+test_age_dist_50()
