@@ -6,9 +6,9 @@ format:
 	black *.py 
 
 lint:
-	ruff check *.py
+	ruff check ./python_files/main_files/*.py
 
 test:
-	python -m pytest -vv --nbval ./python_files/*.ipynb
+	python -m pytest -vv ./python_files/test_files/test_*.py
 
 all: install format lint test 

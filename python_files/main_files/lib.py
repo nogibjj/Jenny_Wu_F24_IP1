@@ -16,13 +16,13 @@ def load_and_preprocess(csv):
 def get_summary_stats(general_df, col):
     """function that calls for the summary statistics for the variable age_years"""
     desc_stats = general_df[col].describe()
-    stat_md = desc_stats.to_markdown()
-    with open("cong_age_summary.md", "w", encoding="utf-8") as file:
-        file.write("Describe:\n")
-        file.write(stat_md)
-        file.write("\n\n")
-        file.write("![congressional_age](python_files/outputs/congressional_age.png)\n")
-    return stat_md
+    # stat_md = desc_stats.to_markdown()
+    # with open("cong_age_summary.md", "w", encoding="utf-8") as file:
+    #     file.write("Describe:\n")
+    #     file.write(stat_md)
+    #     file.write("\n\n")
+    #     file.write("![congressional_age](/output/congressional_age.png)\n")
+    # return stat_md
     print(
         f'The average age of a Congress member from during a  {round(desc_stats["mean"], 3)}'
     )
@@ -49,8 +49,14 @@ def hist_cong_age(general_df, col):
     plt.savefig("output/congressional_age.png")
     plt.show()
 
+    # if is_jupyter is True:
+    #     plt.savefig("./outputs/congressional_age.png")
+    # if is_jupyter is False:
+    #     plt.savefig("./outputs/output_congressional_age_err.png")
+    #     plt.show()
 
-def age_dist_50(general_df):
+
+def age_dist_50(general_df, desc_stats):
     """builds a bar graph that demonstrates distribution of age cross chambers"""
     # Convert 'start_date' column to datetime format
     general_df["start_date"] = pd.to_datetime(general_df["start_date"])
@@ -72,9 +78,19 @@ def age_dist_50(general_df):
     plt.ylabel("Frequency")
     plt.legend(title="Chamber", bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.tight_layout()
+    plt.savefig("output/chamber_age.png")
 
-    if is_jupyter is True:
-        plt.savefig("./outputs/chamber_age.png")
-    if is_jupyter is False:
-        plt.savefig("python_files/outputs/output.png")
-        plt.show()
+    stat_md = desc_stats.to_markdown()
+    with open("cong_age_summary.md", "w", encoding="utf-8") as file:
+        file.write("Describe:\n")
+        file.write(stat_md)
+        file.write("\n\n")
+        file.write("![congressional_age](/output/congressional_age.png)\n")
+        file.write("\n\n")
+        file.write("![chamber_age](output/chamber_age.png)\n")
+
+    # if is_jupyter is True:
+    #     plt.savefig("./outputs/chamber_age.png")
+    # if is_jupyter is False:
+    #     plt.savefig("./outputs/output_chamber_age_err.png")
+    #     plt.show()

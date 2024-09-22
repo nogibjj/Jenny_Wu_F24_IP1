@@ -10,4 +10,7 @@ Describe:
 | 75%   |     61.2163 |
 | max   |     98.0808 |
 
-![congressional_age](python_files/outputs/congressional_age.png)
+![congressional_age](/output/congressional_age.png)
+
+
+![chamber_age](output/chamber_age.png)

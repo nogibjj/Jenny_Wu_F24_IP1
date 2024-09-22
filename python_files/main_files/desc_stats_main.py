@@ -1,6 +1,6 @@
 """MAIN FILE"""
 
-import lib as lib
+import lib
 
 
 def main():
@@ -10,7 +10,7 @@ def main():
     general_df = lib.load_and_preprocess(csv)
     s_stats = lib.get_summary_stats(general_df, "age_years")
     lib.hist_cong_age(general_df, "age_years")
-    lib.age_dist_50(general_df)
+    lib.age_dist_50(general_df, s_stats)
     # print(general_df.head())
     print(s_stats)
 
