@@ -10,7 +10,10 @@
 
 # Jenny_Wu_IP1_F24
 F24 Individual Project 1
-![Accompanying Video](https://youtu.be/JgE3sMuWBMs)
+
+Please see below for the video explaination of the project. 
+
+https://youtu.be/JgE3sMuWBMs
 
 
 ### Purpose of Project
