@@ -8,17 +8,53 @@
 
 ![alt text](Picture1.png)
 
-# Jenny_Wu_MP2_F24
-F24 Mini Project 2
+# Jenny_Wu_IP1_F24
+F24 Individual Project 1
 
 ### Purpose of Project
-The purpose of this project is to use a dataset to build a mini-project to simulate best practices of continuous integration in Data Science projects. I used the FiveThirtyEight's Congress dataset on the age of Congress members to produce sample descriptive statistics and visualizations.
+The purpose of this project is to utilize continuous integration using Gitlab actions of Python to conduct descriptive analysis. I used the FiveThirtyEight's Congress dataset on the age of Congress members to produce sample descriptive statistics and visualizations.
 
 ### Requirements
-- Python script using Pandas for descriptive statistics
-- Read a dataset (CSV or Excel)
-- Generate summary statistics (mean, median, standard deviation)
-- Create at least one data visualization
+The project structure must include the following files:
+    Jupyter Notebook with: 
+        - Cells that perform descriptive statistics using Polars or Panda.
+        - Tested by using nbval plugin for pytest
+    Makefile with the following:
+        - Run all tests (must test notebook and script and lib)
+        - Formats code with Python blackLinks to an external site.
+        - Lints code with RuffLinks to an external site.
+        - Installs code via:  pip install -r requirements.txt
+    test_script.py to test script
+    test_lib.py to test library
+    Pinned requirements.txt
+    Gitlab Actions performs all four Makefile commands with badges for each one in the README.md
+
+### Project Organization 
+    .dev container
+    - devcontainter.json
+    - Dockerfile
+    .github 
+        workflows
+            - format.yml
+            - install.yml
+            - lint.yml
+            - test.yml
+    output
+        - chamber_age.png
+        - congressional_age.png
+    python_files
+        main_files
+            - desc_stats_main.py
+            - lib.py
+        test_files
+            - test_desc_stats_main.py
+            - test_lib.py
+        cong_age_summary.md
+        Congressional Age.ipynb
+    Makefile
+    README.md
+    requirements.txt
+
 
 ### Dataset Description
 The dataset used for this project is the data behind FiveThirtyEight's [Congress Today Is Older Than It’s Ever Been](https://fivethirtyeight.com/features/aging-congress-boomers/), by Geoffrey Skelley (April 3, 2023).
@@ -40,4 +76,3 @@ The dataset used for this project is the data behind FiveThirtyEight's [Congress
 | `age_days` | Age in days, calculated as `start_date` minus `birthday`. | |
 | `age_years` | Age in years, calculated by dividing `age_days` by `365.25`. | | 
 | `generation` | Generation the member belonged to, based on the year of birth. Generations in the data are defined as follows: Gilded (1822-1842), Progressive (1843-1859), Missionary (1860-1882), Lost (1883-1900), Greatest (1901-1927), Silent (1928-1945), baby boomer (1946-1964), Generation X (1965-1980), millennial (1981-1996), Generation Z (1997-2012). <br><br>Note: Baby boomers are listed as `Boomers`, Generation X as `Gen X`, millennials as `Millennial` and Generation Z as `Gen Z`. | Pew Research Center for definitions of [Greatest Generation](https://www.pewresearch.org/politics/2016/12/15/americans-name-the-10-most-significant-historic-events-of-their-lifetimes/) to [Generation Z](https://www.pewresearch.org/fact-tank/2020/04/28/millennials-overtake-baby-boomers-as-americas-largest-generation/); [Strauss and Howe](https://journals.sagepub.com/doi/abs/10.1177/153660069301400207?journalCode=jhra) (1991) for definitions for Gilded to Lost generations. | 
-
