@@ -18,16 +18,15 @@ def test_load_and_preprocess():
     general_df = lib.load_and_preprocess(example_csv)
     assert general_df is not None
     assert general_df.shape == (29120, 13)
-   
 
 
 def test_get_summary_stats():
     """test that the summary function will work"""
     test_desc_stats = lib.get_summary_stats(pd.read_csv(example_csv), "age_years")
-    # assert approximate
     # assert test_desc_stats["min"] == pytest.approx(23.665982, 0.1)
-    # assert test_desc_stats["std"] == pytest.approx(10.763104, 0.1)
+    # assert test_desc_stats["std"] == pytest.approx(10.763105, 0.1)
     assert test_desc_stats is not None
+
 
 def test_hist_cong_age():
     general_df = lib.load_and_preprocess(example_csv)

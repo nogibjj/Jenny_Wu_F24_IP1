@@ -25,8 +25,6 @@ def get_summary_stats(general_df, col):
     print(
         f'Standard Deviation between the ages of Congress members is {round(desc_stats["std"], 3)}'
     )
-
-    print(desc_stats)
     return desc_stats
 
 
