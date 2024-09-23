@@ -5,7 +5,8 @@
 [![Lint](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/lint.yml)
 
 [![Test](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_IP1/actions/workflows/test.yml)
-#INSERT BADGES FOR OTHER CI/CD
+
+![alt text](Picture1.png)
 
 # Jenny_Wu_MP2_F24
 F24 Mini Project 2
@@ -39,3 +40,4 @@ The dataset used for this project is the data behind FiveThirtyEight's [Congress
 | `age_days` | Age in days, calculated as `start_date` minus `birthday`. | |
 | `age_years` | Age in years, calculated by dividing `age_days` by `365.25`. | | 
 | `generation` | Generation the member belonged to, based on the year of birth. Generations in the data are defined as follows: Gilded (1822-1842), Progressive (1843-1859), Missionary (1860-1882), Lost (1883-1900), Greatest (1901-1927), Silent (1928-1945), baby boomer (1946-1964), Generation X (1965-1980), millennial (1981-1996), Generation Z (1997-2012). <br><br>Note: Baby boomers are listed as `Boomers`, Generation X as `Gen X`, millennials as `Millennial` and Generation Z as `Gen Z`. | Pew Research Center for definitions of [Greatest Generation](https://www.pewresearch.org/politics/2016/12/15/americans-name-the-10-most-significant-historic-events-of-their-lifetimes/) to [Generation Z](https://www.pewresearch.org/fact-tank/2020/04/28/millennials-overtake-baby-boomers-as-americas-largest-generation/); [Strauss and Howe](https://journals.sagepub.com/doi/abs/10.1177/153660069301400207?journalCode=jhra) (1991) for definitions for Gilded to Lost generations. | 
+
