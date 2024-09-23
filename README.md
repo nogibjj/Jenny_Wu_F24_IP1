@@ -10,6 +10,8 @@
 
 # Jenny_Wu_IP1_F24
 F24 Individual Project 1
+![Accompanying Video](https://prodduke-my.sharepoint.com/personal/jcw131_duke_edu/_layouts/15/embed.aspx?UniqueId=cd5ea0ac-9bc9-444c-b5d2-c018cedd1ef5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Creat)
+<iframe src="https://prodduke-my.sharepoint.com/personal/jcw131_duke_edu/_layouts/15/embed.aspx?UniqueId=cd5ea0ac-9bc9-444c-b5d2-c018cedd1ef5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="video1638358049.mp4"></iframe>
 
 ### Purpose of Project
 The purpose of this project is to utilize continuous integration using Gitlab actions of Python to conduct descriptive analysis. I used the FiveThirtyEight's Congress dataset on the age of Congress members to produce sample descriptive statistics and visualizations.
