@@ -10,7 +10,7 @@
 
 # Jenny_Wu_IP1_F24
 F24 Individual Project 1
-![Accompanying Video](https://prodduke-my.sharepoint.com/:v:/r/personal/jcw131_duke_edu/Documents/video1638358049.mp4?csf=1&web=1e=BHrt6Enav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+![Accompanying Video](https://youtu.be/JgE3sMuWBMs)
 
 
 ### Purpose of Project
