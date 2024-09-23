@@ -16,15 +16,6 @@ def load_and_preprocess(csv):
 def get_summary_stats(general_df, col):
     """function that calls for the summary statistics for the variable age_years"""
     desc_stats = general_df[col].describe()
-    print(
-        f'The average age of a Congress member from during a  {round(desc_stats["mean"], 3)}'
-    )
-    print(
-        f'The median age of a Congress member from during a {round(desc_stats["50%"], 3)}'
-    )
-    print(
-        f'Standard Deviation between the ages of Congress members is {round(desc_stats["std"], 3)}'
-    )
     return desc_stats
 
 
