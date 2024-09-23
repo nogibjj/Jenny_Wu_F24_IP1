@@ -32,7 +32,6 @@ def hist_cong_age(general_df, col):
     plt.savefig("output/congressional_age.png")
     # plt.show()
 
-
 def age_dist_50(general_df, desc_stats):
     """builds a bar graph that demonstrates distribution of age cross chambers"""
     # Convert 'start_date' column to datetime format
@@ -45,9 +44,9 @@ def age_dist_50(general_df, desc_stats):
 
     # Group by chamber and age group to get frequency counts
     chamber_age_group_counts = (
-        general_df.groupby(["chamber", "age_group"]).size().unstack(fill_value=0)
+        general_df.groupby(["chamber", "age_group"], observed=False).size().unstack(fill_value=0)
     )
-
+# .size().unstack(fill_value=0)
     # Plot a bar graph for each chamber's age distribution (with binned ages)
     chamber_age_group_counts.T.plot(kind="bar", figsize=(12, 8), stacked=False)
     plt.title("Age Distribution by Chamber in Congress (Binned)")
